@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('maxresdefault (1).jpg'); /* Путь к вашему фоновому изображению */
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: animatedBackground 60s linear infinite; /* Анимация */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1.logo { /* Добавлен стиль для логотипа */
+    margin: 0;
+    font-size: 2em;
+    animation: slideInLeft 1s ease-in-out;
+    cursor: pointer; /* Добавлен указатель при наведении для обозначения кликабельности */
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.main-content {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links li a:hover {
+    transform: scale(1.2);
+}
+
+.social-links li a {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-links li a:hover {
+    opacity: 1;
+}
+
+.philosophy {
+    margin-top: 20px;
+    position: relative;
+}
+
+.philosophy p.animated-text {
+    position: absolute;
+    bottom: 20px; /* Перемещаем текст вниз */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    font-size: 3em; /* Увеличиваем размер текста */
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.philosophy img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Стиль для нового стиля */
+.new-style {
+    background-color: #ffd700;
+    color: #000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
